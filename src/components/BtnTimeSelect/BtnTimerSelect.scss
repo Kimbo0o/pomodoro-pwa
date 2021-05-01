@@ -1,0 +1,16 @@
+@import "../../scss/import";
+
+.btn-timerselect{
+    background-color: transparent;
+    padding: rem(13px) rem(30px);
+    border: 1px solid transparent;
+    border-radius: rem(41px);
+    color: $color_primarytext;
+    font-size: rem(40px);    
+    cursor: pointer;
+    margin: 0 rem(20px);
+
+    &--selected {
+        border: 1px solid $color_primarytext;
+    }
+}

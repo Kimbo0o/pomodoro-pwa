@@ -1,0 +1,62 @@
+@import "../../scss/import";
+
+.main-container{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;  
+  position: relative;
+}
+
+.glass-container {
+  width: calc(100% - 16%);  
+  margin: 2rem auto;
+  padding: rem(50px);
+  box-sizing: border-box;
+  border: 1px solid $color_primaryborders;
+  border-radius: rem(25px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(128,128,128, 0.05));
+  backdrop-filter: blur(5px);
+  z-index: 2;
+  position: relative;
+}
+
+.glass-container-content{  
+
+}
+
+
+.bubbles-wrap{
+  
+  
+}
+
+.bubble {
+  position: absolute;
+  width: rem(300px);
+  height: rem(300px);
+  border-radius: 100%;
+  z-index: 1;  
+  opacity: .99;
+
+  &--b1{
+    left: rem(-50px);
+    top: rem(-20px);
+    background: linear-gradient(135deg, $color_primary2, $color_primary1);
+  }
+
+  &--b2 {
+    right: rem(-40px);
+    top: rem(400px);
+    background: linear-gradient(135deg, $color_primary1, $color_primary2);
+  }
+}
+
+.timer-select-btns{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.start-stop-wrap{
+  text-align: center;
+}
