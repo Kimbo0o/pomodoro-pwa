@@ -23,7 +23,7 @@ function App() {
 
   function goToShortBreak() {
     setSelectedTimer(1);
-    setTimerMinutes("01");
+    setTimerMinutes("05");
     setTimerSeconds("00");
     stopTimer();
     console.log("short break");

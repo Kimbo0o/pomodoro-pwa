@@ -19,3 +19,16 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
+// #region different sizes
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  html {
+    font-size: 12px;
+  }
+}
+// #endredion different sizes
