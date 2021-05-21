@@ -1,11 +1,15 @@
 @import "../../scss/import";
 
-.btn-start-stop{
-    background-color: $color_primary1;
-    padding: rem(13px) rem(100px);
-    border: 1px solid $color_startstop_border;
-    border-radius: rem(70px);
-    color: $color_primarytext;
-    font-size: rem(73px);        
-    cursor: pointer;
+.btn-start-stop {
+  background-color: $color_primary1;
+  padding: rem(13px) rem(100px);
+  border: 1px solid $color_startstop_border;
+  border-radius: rem(70px);
+  color: $color_primarytext;
+  font-size: rem(73px);
+  cursor: pointer;
+
+  &--alternative-color {
+    background-color: $color_primary3;
+  }
 }

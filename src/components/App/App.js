@@ -87,7 +87,7 @@ function App() {
 
   return (
     <>
-      <div className="main-container">
+      <div className={"main-container" + (selectedTimer == 0 ? " main-container--work" : " main-container--break")} >
         <div className="bubbles-wrap">
           <div className="bubble bubble--b1"></div>
           <div className="bubble bubble--b2"></div>
@@ -101,7 +101,7 @@ function App() {
             </div>
             <Timer minutes={timerMinutes} seconds={timerSeconds}></Timer>
             <div className="start-stop-wrap">
-              <BtnStartStop title={timerRunning ? "STOP" : "START"} clicked={clickedStarStopBtn}></BtnStartStop>
+              <BtnStartStop title={timerRunning ? "STOP" : "START"} alternativeColor={selectedTimer !== 0 ? true : false} clicked={clickedStarStopBtn}></BtnStartStop>
             </div>
           </div>
         </div>

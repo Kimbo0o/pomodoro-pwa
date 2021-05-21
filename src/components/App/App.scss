@@ -1,33 +1,34 @@
 @import "../../scss/import";
 
-.main-container{
+.main-container {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;  
+  overflow: hidden;
   position: relative;
+  background: linear-gradient(135deg, $color_primary1, $color_primary2);
 }
 
 .glass-container {
-  width: calc(100% - 16%);  
+  width: calc(100% - 16%);
   margin: 2rem auto;
   padding: rem(50px);
   box-sizing: border-box;
   border: 1px solid $color_primaryborders;
   border-radius: rem(25px);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(128,128,128, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4),
+    rgba(128, 128, 128, 0.05)
+  );
   backdrop-filter: blur(5px);
   z-index: 2;
   position: relative;
 }
 
-.glass-container-content{  
-
+.glass-container-content {
 }
 
-
-.bubbles-wrap{
-  
-  
+.bubbles-wrap {
 }
 
 .bubble {
@@ -35,10 +36,10 @@
   width: rem(300px);
   height: rem(300px);
   border-radius: 100%;
-  z-index: 1;  
-  opacity: .99;
+  z-index: 1;
+  opacity: 0.99;
 
-  &--b1{
+  &--b1 {
     left: rem(-50px);
     top: rem(-20px);
     background: linear-gradient(135deg, $color_primary2, $color_primary1);
@@ -51,12 +52,27 @@
   }
 }
 
-.timer-select-btns{
+.timer-select-btns {
   display: flex;
   width: 100%;
   justify-content: center;
 }
 
-.start-stop-wrap{
+.start-stop-wrap {
   text-align: center;
 }
+
+// #region break
+.main-container--break {
+  background: linear-gradient(135deg, $color_primary3, $color_primary4);
+
+  .bubble {
+    &--b1 {
+      background: linear-gradient(135deg, $color_primary4, $color_primary3);
+    }
+    &--b2 {
+      background: linear-gradient(135deg, $color_primary3, $color_primary4);
+    }
+  }
+}
+// #endregion break

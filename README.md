@@ -8,7 +8,7 @@ This App is developed unsing React.js. The Settings will be stored locally. I mi
 
 ## TODO
 
-- [ ] Change Colors for Work/Break
+- [X] Change Colors for Work/Break
 - [ ] Make Timers Adjustable
 - [ ] Play sounds
 - [ ] iPad Styles
