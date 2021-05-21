@@ -10,7 +10,7 @@ This App is developed unsing React.js. The Settings will be stored locally. I mi
 
 - [X] Change Colors for Work/Break
 - [ ] Make Timers Adjustable
-- [ ] Play sounds
+- [X] Play sounds
 - [ ] iPad Styles
 - [ ] Mobile Styles
 - [ ] Dark Mode
