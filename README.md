@@ -12,9 +12,9 @@ This App is developed unsing React.js. The Settings will be stored locally. I mi
 - [X] Play sounds
 - [X] iPad Styles
 - [X] Mobile Styles
-- [ ] Make Timers Adjustable
-- [ ] Dark Mode
 - [ ] TODO List Functionality
 	- [ ] Input
 	- [ ] Saving
-	- [ ] Toggles for PWA/TODO
+- [ ] Make Timers Adjustable
+- [ ] Toggles for Pomodoro/Timer Adjustments/TODO
+- [ ] Add PWA Metadata and Lighthouse tests
