@@ -25,12 +25,6 @@
   position: relative;
 }
 
-.glass-container-content {
-}
-
-.bubbles-wrap {
-}
-
 .bubble {
   position: absolute;
   width: rem(300px);
@@ -50,16 +44,6 @@
     top: rem(400px);
     background: linear-gradient(135deg, $color_primary1, $color_primary2);
   }
-}
-
-.timer-select-btns {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.start-stop-wrap {
-  text-align: center;
 }
 
 // #region break
