@@ -5,35 +5,31 @@ import Timer from "../Timer/Timer";
 import doneSound from "../../assets/audio/done.mp3";
 import "./Pomodoro.scss";
 
-function Pomodoro() {
+function Pomodoro({ selectedTimer, updateSelectedTimer }) {
   const [timerRunning, setTimerRunning] = useState(false);
   const [timerMinutes, setTimerMinutes] = useState("25");
   const [timerSeconds, setTimerSeconds] = useState("00");
-  const [selectedTimer, setSelectedTimer] = useState(0);
   let interval = false;
 
   function goToWork() {
-    setSelectedTimer(0);
+    updateSelectedTimer(0);
     setTimerMinutes("25");
     setTimerSeconds("00");
     stopTimer();
-    console.log("work");
   }
 
   function goToShortBreak() {
-    setSelectedTimer(1);
+    updateSelectedTimer(1);
     setTimerMinutes("05");
     setTimerSeconds("00");
     stopTimer();
-    console.log("short break");
   }
 
   function goToLongBreak() {
-    setSelectedTimer(2);
+    updateSelectedTimer(2);
     setTimerMinutes("15");
     setTimerSeconds("00");
     stopTimer();
-    console.log("long break");
   }
 
   function clickedStarStopBtn() {
@@ -103,45 +99,32 @@ function Pomodoro() {
 
   return (
     <>
-      <div
-        className={
-          "main-container" +
-          (selectedTimer === 0
-            ? " main-container--work"
-            : " main-container--break")
-        }
-      >
-        <div className="bubbles-wrap">
-          <div className="bubble bubble--b1"></div>
-          <div className="bubble bubble--b2"></div>
-        </div>
-        <div className="glass-container">
-          <div className="glass-container-content">
-            <div className="timer-select-btns">
-              <BtnTimerSelect
-                title="Work"
-                selected={selectedTimer === 0}
-                clicked={goToWork}
-              ></BtnTimerSelect>
-              <BtnTimerSelect
-                title="Short Break"
-                selected={selectedTimer === 1}
-                clicked={goToShortBreak}
-              ></BtnTimerSelect>
-              <BtnTimerSelect
-                title="Long Break"
-                selected={selectedTimer === 2}
-                clicked={goToLongBreak}
-              ></BtnTimerSelect>
-            </div>
-            <Timer minutes={timerMinutes} seconds={timerSeconds}></Timer>
-            <div className="start-stop-wrap">
-              <BtnStartStop
-                title={timerRunning ? "STOP" : "START"}
-                alternativeColor={selectedTimer !== 0 ? true : false}
-                clicked={clickedStarStopBtn}
-              ></BtnStartStop>
-            </div>
+      <div className="glass-container">
+        <div className="glass-container-content">
+          <div className="timer-select-btns">
+            <BtnTimerSelect
+              title="Work"
+              selected={selectedTimer === 0}
+              clicked={goToWork}
+            ></BtnTimerSelect>
+            <BtnTimerSelect
+              title="Short Break"
+              selected={selectedTimer === 1}
+              clicked={goToShortBreak}
+            ></BtnTimerSelect>
+            <BtnTimerSelect
+              title="Long Break"
+              selected={selectedTimer === 2}
+              clicked={goToLongBreak}
+            ></BtnTimerSelect>
+          </div>
+          <Timer minutes={timerMinutes} seconds={timerSeconds}></Timer>
+          <div className="start-stop-wrap">
+            <BtnStartStop
+              title={timerRunning ? "STOP" : "START"}
+              alternativeColor={selectedTimer !== 0 ? true : false}
+              clicked={clickedStarStopBtn}
+            ></BtnStartStop>
           </div>
         </div>
       </div>
