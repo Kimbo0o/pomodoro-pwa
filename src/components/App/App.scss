@@ -1,9 +1,14 @@
 @import "../../scss/import";
 
+body {
+  color: $color_primarytext;
+}
+
 .main-container {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   position: relative;
   background: linear-gradient(135deg, $color_primary1, $color_primary2);
 }
@@ -44,6 +49,18 @@
     top: rem(400px);
     background: linear-gradient(135deg, $color_primary1, $color_primary2);
   }
+
+  &--b3 {
+    left: rem(-20px);
+    top: rem(700px);
+    background: linear-gradient(135deg, $color_primary1, $color_primary2);
+  }
+
+  // &--b4 {
+  //   right: rem(-30px);
+  //   top: rem(1100px);
+  //   background: linear-gradient(135deg, $color_primary1, $color_primary2);
+  // }
 }
 
 // #region break

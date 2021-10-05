@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Pomodoro from "../Pomodoro/Pomodoro";
-import Tasks from "../Tasks/Tasks";
+import Pomodoro from "../Timer/Pomodoro/Pomodoro";
+import Tasks from "../Tasks/Tasks/Tasks";
 
 import "./App.scss";
 
@@ -14,6 +14,7 @@ function App() {
   return (
     <>
       <div
+        id="main-container"
         className={
           "main-container" +
           (selectedTimer === 0
@@ -24,6 +25,8 @@ function App() {
         <div className="bubbles-wrap">
           <div className="bubble bubble--b1"></div>
           <div className="bubble bubble--b2"></div>
+          <div className="bubble bubble--b3"></div>
+          <div className="bubble bubble--b4"></div>
         </div>
         <Pomodoro
           selectedTimer={selectedTimer}

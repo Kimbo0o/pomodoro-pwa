@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import BtnStartStop from "../BtnStartStop/BtnStartStop";
-import BtnTimerSelect from "../BtnTimeSelect/BtnTimerSelect";
+import BtnStartStop from "../../UI/BtnStartStop/BtnStartStop";
+import BtnTimerSelect from "../../UI/BtnTimeSelect/BtnTimerSelect";
 import Timer from "../Timer/Timer";
-import doneSound from "../../assets/audio/done.mp3";
+import doneSound from "../../../assets/audio/done.mp3";
 import "./Pomodoro.scss";
 
 function Pomodoro({ selectedTimer, updateSelectedTimer }) {
