@@ -1,20 +1,4 @@
 # pomodoro-pwa
 
-This is a simple Pomodoro Timer PWA. I mainly develop this App to get some experience with React.js and PWA and to try out a Glassmorphism UI. I also just wanted a Pomodoro app that worked to my liking.
+This project documents my first steps in React.js. After taking a full React course I started over in the pomodoro-timer-pwa repository to apply what I learned. This repository might be deleted later.
 
-## Development
-
-This App is developed unsing React.js. The Settings will be stored locally. I might add Online Storage later.
-
-## TODO
-
-- [X] Change Colors for Work/Break
-- [X] Play sounds
-- [X] iPad Styles
-- [X] Mobile Styles
-- [ ] TODO List Functionality
-	- [ ] Input
-	- [ ] Saving
-- [ ] Make Timers Adjustable
-- [ ] Toggles for Pomodoro/Timer Adjustments/TODO
-- [ ] Add PWA Metadata and Lighthouse tests
